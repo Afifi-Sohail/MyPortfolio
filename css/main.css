@@ -1,0 +1,447 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #121212;
+    color: #fff;
+    font-family: Arial, Helvetica, sans-serif;
+    text-transform: capitalize;
+}
+
+img {
+    width: 100%;
+}
+
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    transition: all .5s ease-in-out;
+    -webkit-transition: all .5s ease-in-out;
+    -moz-transition: all .5s ease-in-out;
+    -ms-transition: all .5s ease-in-out;
+    -o-transition: all .5s ease-in-out;
+}
+
+.active {
+    color: #585858;
+}
+
+
+/* Start Navbar Style */
+
+nav {
+    background-color: #fff;
+    color: #000;
+    padding-top: 5px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 5;
+}
+
+nav .logo {
+    font-weight: bold;
+    font-size: 20px;
+    text-transform: uppercase;
+    margin-top: 12px;
+    cursor: pointer;
+    color: #000;
+    letter-spacing: 2px;
+    transition: color .5s ease-in-out;
+    -webkit-transition: color .5s ease-in-out;
+    -moz-transition: color .5s ease-in-out;
+    -ms-transition: color .5s ease-in-out;
+    -o-transition: color .5s ease-in-out;
+}
+
+nav .logo span {
+    background-color: #000;
+    color: #fff;
+    padding: 2px 5px;
+    border-radius: 5px;
+}
+
+nav .logo:hover {
+    text-decoration: none;
+}
+
+nav i {
+    font-size: 35px;
+    margin: 5px 10px 5px auto;
+    cursor: pointer;
+    display: none !important;
+}
+
+nav ul {
+    list-style: none;
+    margin-bottom: 8px;
+}
+
+nav ul li {
+    display: inline-block;
+    font-weight: bold;
+    font-size: 20px;
+    text-transform: uppercase;
+    margin: 13px 10px 0 0;
+    cursor: pointer;
+    padding-bottom: 10px;
+    transition: color .5s ease-in-out;
+    -webkit-transition: color .5s ease-in-out;
+    -moz-transition: color .5s ease-in-out;
+    -ms-transition: color .5s ease-in-out;
+    -o-transition: color .5s ease-in-out;
+}
+
+nav ul li a {
+    color: #000;
+}
+
+nav ul li:hover a {
+    color: #585858;
+    text-decoration: none;
+}
+
+nav ul li:hover {
+    border-bottom: 5px solid #000;
+    margin-bottom: -5px;
+}
+
+
+/* End Navbar Style */
+
+
+/* Start Header Style */
+
+header {
+    padding: 20px 0;
+}
+
+header h1 {
+    margin-top: 30%;
+    font-weight: bold;
+    font-size: 60px;
+    text-shadow: 1px 1px 4px #ccc;
+    margin-bottom: 5px;
+}
+
+header p {
+    font-size: 35px;
+    text-transform: capitalize;
+}
+
+header .image img {
+    margin-top: 28%;
+}
+
+
+/* End Header Style */
+
+
+/* Start About ME */
+
+.about-me {
+    margin-top: 150px;
+    background-color: #fff;
+    color: #000;
+    padding: 100px 0;
+}
+
+.about-me h2 {
+    margin: 30px 0;
+    color: #000;
+}
+
+.about-me .image {
+    width: 160px;
+    height: 160px;
+    overflow: hidden;
+    margin: 20px auto;
+    border-radius: 100px;
+}
+
+.about-me p {
+    font-size: 20px;
+}
+
+.about-me button {
+    width: 160px;
+    padding: 10px;
+    margin: 30px 10px 0;
+    background-color: #fff;
+    outline: none;
+    text-transform: uppercase;
+    transition: all .5s ease-in-out;
+    -webkit-transition: all .5s ease-in-out;
+    -moz-transition: all .5s ease-in-out;
+    -ms-transition: all .5s ease-in-out;
+    -o-transition: all .5s ease-in-out;
+    border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
+}
+
+.about-me button:hover {
+    background-color: #eee;
+}
+
+
+/* End About Me */
+
+
+/* Start Services Style */
+
+.services {
+    background-color: #121212;
+    color: #fff;
+    padding: 50px 0;
+}
+
+.services h2 {
+    margin: 50px;
+}
+
+.services .box {
+    background-color: #fff;
+    color: #000;
+    box-shadow: 1px 1px 5px 2px #fff;
+    margin: 20px 0;
+    padding: 15px 0;
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+}
+
+.services .box i {
+    font-size: 60px;
+    margin: 20px 0;
+}
+
+.services .box h3 {
+    font-weight: bold;
+    font-size: 22px;
+}
+
+.services .box p {
+    width: 180px;
+    margin: auto;
+}
+
+
+/* End Services Style */
+
+
+/* Start My Portfolio Style */
+
+.portfolio {
+    background-color: #fff;
+    padding: 50px 0;
+}
+
+.portfolio h2 {
+    color: #000;
+    margin: 50px 0;
+}
+
+.portfolio .box {
+    background-color: #000;
+    margin-top: 10px;
+    padding-right: 0;
+    padding-left: 0;
+    margin: 15px;
+    border: 1px solid #ccc;
+    position: relative;
+    min-height: 185px;
+}
+
+.portfolio .box:hover .overlay {
+    background-color: rgba(0, 0, 0, .5);
+}
+
+.portfolio .box .view {
+    position: absolute;
+    bottom: 2%;
+    left: 50%;
+    z-index: 3;
+    transform: translate(-50%, 0px);
+    font-size: 18px;
+    font-weight: bold;
+    background-color: rgb(0, 0, 0, .7);
+    color: #fff;
+    opacity: 0;
+    padding: 4px;
+    display: block;
+    width: 80%;
+    text-align: center;
+    transition: all .5s ease-in-out;
+    -webkit-transition: all .5s ease-in-out;
+    -moz-transition: all .5s ease-in-out;
+    -ms-transition: all .5s ease-in-out;
+    -o-transition: all .5s ease-in-out;
+}
+
+.portfolio .view:hover {
+    color: #ccc
+}
+
+.portfolio .box:hover .view {
+    opacity: 1;
+    text-decoration: none;
+}
+
+.portfolio .box img {
+    width: 100%;
+    height: 100%;
+}
+
+
+/* End My Portfolio Style */
+
+
+/* Start Contact Me Style */
+
+.contact-me {
+    margin: 50px 0;
+}
+
+.contact-me h2 {
+    margin: 50px 0;
+}
+
+.contact-me .icones {
+    text-align: center;
+    margin: 20px auto
+}
+
+.contact-me .icones a {
+    text-decoration: none;
+}
+
+.contact-me .icones i {
+    font-size: 27px;
+    margin: 0 7px;
+    cursor: pointer;
+    color: #fff;
+    transition: color .5s ease-in-out;
+    -webkit-transition: color .5s ease-in-out;
+    -moz-transition: color .5s ease-in-out;
+    -ms-transition: color .5s ease-in-out;
+    -o-transition: color .5s ease-in-out;
+}
+
+.contact-me .icones i:hover {
+    text-shadow: 1px 1px 1px #ccc;
+}
+
+.contact-me .span-i {
+    text-align: center;
+    margin: 20px auto
+}
+
+.contact-me .span-i span {
+    margin: 0 15px;
+    text-transform: capitalize;
+    font-size: 18px;
+}
+
+.contact-me .span-i span a {
+    color: #fff;
+    text-decoration: none;
+}
+
+
+/* End Contact Me Style */
+
+
+/* Start Footer Style */
+
+footer {
+    background-color: #fff;
+    padding: 20px;
+    text-align: center;
+    color: #000;
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 18px;
+}
+
+
+/* End Footer Style */
+
+
+/* Start Media Query */
+
+@media screen and (max-width: 991px) {
+    /* Start Navbar */
+    nav ul {
+        display: none;
+    }
+    nav ul li {
+        display: block;
+    }
+    nav .logo {
+        margin-bottom: 10px;
+    }
+    nav i {
+        display: block !important;
+    }
+    /* End Navbar */
+    /* Start Header */
+    header {
+        text-align: center;
+    }
+    header h1 {
+        margin-top: 15%;
+        font-size: 45px;
+    }
+    header p {
+        font-size: 30px;
+    }
+    header .image img {
+        margin-top: 10%;
+    }
+    /* End Header */
+}
+
+@media screen and (max-width: 767px) {
+    /* Start NAvbar */
+    nav ul li {
+        font-size: 16px;
+    }
+    /* End Navbar */
+    /* Start Header */
+    header h1 {
+        margin-top: 20%;
+        font-size: 35px;
+    }
+    header p {
+        font-size: 20px;
+    }
+    /* End Header */
+    h2 {
+        font-size: 25px;
+    }
+    /* Start About Me */
+    .about-me p {
+        font-size: 17px;
+    }
+    /* End About Me */
+    /* Start Contact Me */
+    .contact-me .span-i span {
+        display: block;
+    }
+    /* End Contact Me */
+}
+
+
+/* End Media Query */
